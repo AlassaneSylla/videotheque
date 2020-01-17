@@ -38,7 +38,7 @@
     ?>
     <table>
         <tr>
-            <th>NOM</th>
+            <th>NOM FILM</th>
             <th>SYNOPSIS</th>
             <th>ANNEE</th>
             <th>IMAGE</th>
@@ -52,7 +52,9 @@
                 <td><?php  echo $row['nom'] ?></td>
                 <td><?php  echo $row['synopsis'] ?></td>
                 <td><?php  echo $row['annee'] ?></td>
-                <td><?php  echo $row['image'] ?></td>
+                <td>
+                    <img src="'.$_GET[<?php  echo $row['image'] ?>].'.jpg"/>
+                </td>
                 <td><?php  echo $row['type'] ?></td>
                 <td><?php  echo $row['prix'] ?></td>
                 <td>

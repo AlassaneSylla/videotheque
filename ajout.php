@@ -43,7 +43,7 @@
             <label>Date : </label>
             <input id="champ3" type="date" name="date"><br>
             <label>Image du film : </label>
-            <input id="champ4" type="file" name="image"><br>
+            <input id="champ4" type="image" name="image"><br>
             <label>Type du film : </label>
             <select id="champ5" name="type">
                 <option selected="selected"></option>

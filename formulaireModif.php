@@ -57,7 +57,7 @@
                 <option >comedie</option>
            </select><br>
             <label>Image du film : </label>
-            <input type="file" name="image" value="<?php echo $modif ['image'] ?>">
+            <input type="image" name="image" value="<?php echo $modif ['image'] ?>">
             <br>
             <label>Prix du film : </label>
             <input type="text" name="prix" value="<?php echo $modif ['prix'] ?>"> FCFA<br>
