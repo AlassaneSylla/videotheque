@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>    
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"> 
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet" href="sweetalert2.css">
     <script type="text/javascript"></script>
-  <title>Ajouter film</title>   
+    <title>Ajout film</title>   
 </head>
 <body>
     <header class="header">
@@ -20,7 +19,7 @@
                 <nav class="navbar">
                     <ul class="nav"><!--
                     --><li><a href="index.php">ACCUEIL</a></li><!--
-                    --><li><a href="films.php">LISTE FILMS</a></li><!--
+                    --><li><a href="films.php">LISTE DES FILMS</a></li><!--
                     --><li><a href="ajout.php">VIDER FORMULAIRE</a></li>
                     </ul> 
                </nav>
@@ -36,30 +35,30 @@
     <form class="formulaireAjout" method="post" action="traitementFilm.php">
         <fieldset>
             <legend>AJOUTER FILM</legend>
-            <label>Nom du film : </label>
+            <label>TITRE : </label>
             <input id="champ1" type="text" name="nomFilm" autofocus="" required=""/><br> 
-            <label>Synopsis du film </label>
-            <textarea id="champ2" name="synopsis" rows="8" cols="45">Entrez le synopsis...</textarea><br>
-            <label>Date : </label>
+            <label>SYNOPSIS : </label>
+            <textarea type="text" id="champ2" name="synopsis" rows="8" cols="45"></textarea><br>
+            <label>DATE : </label>
             <input id="champ3" type="date" name="date"><br>
-            <label>Image du film : </label>
-            <input id="champ4" type="image" name="image"><br>
-            <label>Type du film : </label>
-            <select id="champ5" name="type">
+            <label>IMAGE : </label>
+            <input id="champ4" type="file" name="image"><br>
+            <label>TYPE : </label>
+            <select id="champ5" name="type" type="text">
                 <option selected="selected"></option>
                 <option>fiction</option>
                 <option>action</option>
                 <option>drame</option>
                 <option>comedie</option>
            </select><br>
-            <label>Prix du film : </label>
+            <label>PRIX : </label>
             <input id="champ6" type="text" name="prix"> FCFA<br>
                <label></label>
-            <input class="button_form" type="submit" onclick="validation();" name="bouton" value="AJOUTER"> 
+            <input class="button_form" type="submit" name="bouton" value="AJOUTER"> 
         </fieldset>
     </form> 
    <footer>
-           <p>Copyright Alassane - Tous droits de réservés © | Vidéooo ! 2020<br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
+           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
            </p>
    </footer>
     

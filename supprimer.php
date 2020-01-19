@@ -11,14 +11,10 @@
     
     //verification
     if ($resultat){
-        echo " <div class='alert alert-sucess'><h1>Requete validee !</h1><p>la mise a jour a bien ete effectuee !</p>";
-        header('location:films.php');
-        
+        $message = 'La suppression a reussi !';
+        header('location:films.php?sms='.$message);    
     }
     else{
         echo 'Erreur la supression a échouée';
-        
-    }
-    
-        
+    }      
 ?>

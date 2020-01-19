@@ -14,8 +14,8 @@
     $resultat = mysqli_query($conn,$sql);
 
     if ($resultat){
-        echo 'insertion reussie';
-        header('location:index.php');
+        $message = 'Insertion reussie';
+        header('location:films.php?sms='.$message);
     }
     else{
         echo 'Linsertion a echouee';

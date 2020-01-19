@@ -16,10 +16,11 @@ body{
     text-align: right;
     margin-right: 50px;
     height:70px;
+    width: auto;
 }
 .champ{
     border: 0.3px;
-    width:350px;
+    width: 200px;
     height:30px;
     background-color: beige;
     color:black;
@@ -36,7 +37,7 @@ body{
     color: #fff;
     height: 35px;
     margin-left: 10px;
-    width: 150px;
+    width: auto;
     text-transform: uppercase;
 }
 .navigation{
@@ -54,7 +55,6 @@ body{
     justify-content: center;
     padding: 0; 
     margin: 0;
-    /*text-align: center;*/
 }
 .nav li{
     display: inline;
@@ -67,9 +67,9 @@ body{
     text-decoration: none; 
 }
 .nav a:hover{   
-        background-color:dodgerblue ;    
-        color:black;    
-        border-color:blue;
+    background-color:dodgerblue ;    
+    color:black;    
+    border-color:blue;
 }
 .bienvenu{
     justify-content: center;
@@ -78,59 +78,59 @@ body{
     margin-top: 5px;
 }
 .bienvenu span{
-            text-transform: uppercase;
-            display: block;
+    text-transform: uppercase;
+    display: block;
 }
 .text1{
-            color:cornflowerblue;
-            font-size: 20px;
-            font-weight: 100;
-            letter-spacing: 8px;
-            margin-bottom: 5px;
-            position: relative;
-            animation: text 3s 1;
+    color:cornflowerblue;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 8px;
+    margin-bottom: 5px;
+    position: relative;
+    animation: text 3s 1;
 }
 .text2{
-            font-size: 30px;
-            color:blue;
+    font-size: 30px;
+    color:blue;
 }
 @keyframes text {
-            0%{
-                color: black;
-                margin-bottom: -40px;
-            }
-            30%{
-                letter-spacing: 25px;
-                margin-bottom: -40px;
-            }
-            85%{
-                letter-spacing: 8px;
-                margin-bottom: -40px;
-            }
+     0%{
+            color: black;
+            margin-bottom: -40px;
+        }
+        30%{
+            letter-spacing: 25px;
+            margin-bottom: -40px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -40px;
+        }
 }
 .slider{
-            width: 1000px;
-            height: 250px;
-            overflow: hidden;
-            margin:100px auto;
-            margin-top: 10px;
-        }
+    width: 1000px;
+    height: 250px;
+    overflow: hidden;
+    margin:100px auto;
+    margin-top: 10px;
+}
 .slides{
-            width: calc(350px * 10);
-            animation: glisse 25s infinite;
+    width: calc(350px * 10);
+    animation: glisse 25s infinite;
 } 
 .slide{
-            float: left;
+        float: left;
 }
-        @keyframes glisse {
-            0%{transform: translateX(0);}
-            5%{transform: translateX(0);}
-            11%{transform: translateX(-350px);}
-            16%{transform: translateX(-350px);}
-            21%{transform: translateX(-700px);}
-            26%{transform: translateX(-700px);}
-            31%{transform: translateX(-1050px);}
-            36%{transform: translateX(-1050px);}
+@keyframes glisse {
+    0%{transform: translateX(0);}
+    5%{transform: translateX(0);}
+    11%{transform: translateX(-350px);}
+    16%{transform: translateX(-350px);}
+    21%{transform: translateX(-700px);}
+    26%{transform: translateX(-700px);}
+    31%{transform: translateX(-1050px);}
+    36%{transform: translateX(-1050px);}
             /*41%{transform: translateX(-1400px);}
             46%{transform: translateX(-1400px);}
             51%{transform: translateX(-1750px);}
@@ -183,39 +183,39 @@ footer a:hover{
     height: auto;
 }
 fieldset {
-  margin-bottom: 15px;
-  padding: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
-legend {
-  padding: 0px 3px;
-  font-weight: bold;
-  font-variant: small-caps;
+legend{
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 label {
-  width: 110px;
-  display: inline-block;
-  vertical-align: top;
-  margin: 6px;
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
 }
 input:focus {
-  background: #eaeaea;
+    background: #eaeaea;
 }
 input, textarea {
-  width: 300px;
+    width: 300px;
 }
  
 textarea {
-  height: 100px;
+    height: 100px;
 }
  
 select {
-  width: 254px;
+    width: 254px;
 }
 input[type=submit] {
-  width: 150px;
-  padding: 10px;
-  background-color: lightgreen;
-  color: black;
+    width: 150px;
+    padding: 10px;
+    background-color: lightgreen;
+    color: black;
 }
 table,td,tr{
     border:0.5px solid grey;
