@@ -44,13 +44,13 @@
 
         $sql = "SELECT * FROM films WHERE nom LIKE '%$search%' ";
         $resultat = mysqli_query($conn,$sql);
-        $ligne= mysqli_num_rows($resultat);
+        $ligne= mysqli_num_rows($resultat);//
         if($ligne<1)//si requete =0
         {
             $affiche = "Ce film n'existe pas.";
         }   
         }
-        else
+        else//sinon la liste vient
         {
             $sql = 'select * from films';
             $resultat = mysqli_query($conn,$sql);   
@@ -76,7 +76,7 @@
                 <td><?php  echo $row['synopsis'] ?></td>
                 <td><?php  echo $row['annee'] ?></td>
                 <td>
-                    <img src="images/<?php  echo $row['image'] ?>" width="50" height="25"/>
+                   <img src="images/<?php  echo $row['image'] ?>" width="70" height="90"/>
                 </td>
                 <td><?php  echo $row['type'] ?></td>
                 <td><?php  echo $row['prix'] ?></td>

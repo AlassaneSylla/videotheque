@@ -38,18 +38,22 @@
             <label>TITRE : </label>
             <input id="champ1" type="text" name="nomFilm" autofocus="" required=""/><br> 
             <label>SYNOPSIS : </label>
-            <textarea type="text" id="champ2" name="synopsis" rows="8" cols="45"></textarea><br>
+            <input type="text" id="champ2" name="synopsis" maxlength="1080"></input><br>
             <label>DATE : </label>
             <input id="champ3" type="date" name="date"><br>
             <label>IMAGE : </label>
             <input id="champ4" type="file" name="image"><br>
             <label>TYPE : </label>
-            <select id="champ5" name="type" type="text">
+            <select id="champ5" name="type">
                 <option selected="selected"></option>
                 <option>fiction</option>
                 <option>action</option>
                 <option>drame</option>
                 <option>comedie</option>
+                <option>romance</option> 
+                <option>historique</option>
+                <option>fantastique</option>
+                <option>horreur</option>
            </select><br>
             <label>PRIX : </label>
             <input id="champ6" type="text" name="prix"> FCFA<br>

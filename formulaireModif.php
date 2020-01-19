@@ -39,10 +39,10 @@
      <form class="formulaireAjout" method="post" action="modifier.php">
         <fieldset>
             <legend>MODIFIER FILM</legend>
-            <label>Nom : </label>
+            <label>NOM : </label>
             <input type="text" name="nom" value="<?php  echo $modif['nom'] ?>"/><br> 
             <label>SYNOPSIS</label>
-            <input type="text" name="synopsis" value="<?php echo $modif['synopsis'] ?>">
+            <input type="text" name="synopsis" value="<?php echo $modif['synopsis'] ?>" maxlength="1080"><br>
             <input type="hidden" name="idmodif" value="<?php echo $_GET['id']?>"><br><!--pour recuperer le id--> 
             <label>DATE : </label>
             <input type="date" name="date" value="<?php echo $modif['date'] ?>"><br>
@@ -52,7 +52,11 @@
                 <option>fiction</option>
                 <option>action</option>
                 <option>drame</option>
-                <option>comedie</option>
+                <option>comedie</option> 
+                <option>romance</option> 
+                <option>historique</option>
+                <option>fantastique</option>
+                <option>horreur</option>
            </select><br>
             <label>IMAGE : </label>
             <input type="file" name="image">
