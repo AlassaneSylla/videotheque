@@ -280,6 +280,10 @@ table{
     justify-content: center;
     align-items: center;
 }
+.paragraphe_synopsis{
+    text-align: justify;
+    font-family: 'Foglihten', 'Arial Narrow';
+}
 
 /*@media all and (max-width: 1024px)
 {

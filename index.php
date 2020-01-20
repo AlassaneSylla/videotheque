@@ -46,9 +46,9 @@
             </div>
         </section>
          <article>
-               <p> 
-                  <em>Vous etes dans ma collection de vidéos.
-                    Dans cette application web, vous pouvez afficher la liste des films, ajouter un ou des films avec des informations le concernant mais également modifier et supprimer des films qui sont déjas dans ma base.
+               <p class="paragraphe_synopsis"> 
+                  <em>Vous etes dans Vidéooo ! qui est une collection de vidéos.
+                    Dans cette application web, vous pouvez afficher la liste des films, ajouter un film avec des informations le concernant, supprimer un film de la liste mais également modifier les informations des films qui sont déjas dans la base de données.
                   </em>
               </p>
         </article>

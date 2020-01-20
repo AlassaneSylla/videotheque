@@ -73,7 +73,7 @@
             <tr>
                 
                 <td><?php  echo $row['nom'] ?></td>
-                <td><?php  echo $row['synopsis'] ?></td>
+                <td><p class="paragraphe_synopsis"><?php  echo $row['synopsis'] ?></p></td>
                 <td><?php  echo $row['annee'] ?></td>
                 <td>
                    <img src="images/<?php  echo $row['image'] ?>" width="70" height="90"/>

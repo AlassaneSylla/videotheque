@@ -32,7 +32,7 @@
             </div>
     </section>
     
-    <form class="formulaireAjout" method="post" action="traitementFilm.php">
+    <form class="formulaireAjout" method="post" action="traitementFilm.php" enctype="mutipart/form-data">
         <fieldset>
             <legend>AJOUTER FILM</legend>
             <label>TITRE : </label>
