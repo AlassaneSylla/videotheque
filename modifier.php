@@ -7,7 +7,9 @@ $idfilm=$_POST['idmodif'];
 
 if(isset($_POST['update_buton'])){
     $nom=$_POST['nom'];
+    $nom = addslashes($nom);
     $synopsis=$_POST['synopsis'];
+    $synopsis = addslashes($synopsis);
     $date=$_POST['date'];
     $image=$_POST['image'];
     $type=$_POST['type'];
