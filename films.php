@@ -76,7 +76,7 @@
                 <td><p class="paragraphe_synopsis"><?php  echo $row['synopsis'] ?></p></td>
                 <td><?php  echo $row['annee'] ?></td>
                 <td>
-                   <img src="images/<?php  echo $row['image'] ?>" width="70" height="90"/>
+                   <p><img src="images/<?php  echo $row['image'] ?>" width="70" height="90"/></p>
                 </td>
                 <td><?php  echo $row['type'] ?></td>
                 <td><?php  echo $row['prix'] ?></td>
