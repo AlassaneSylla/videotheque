@@ -38,13 +38,13 @@
             <label>TITRE : </label>
             <input id="champ1" type="text" name="nomFilm" autofocus="" required=""/><br> 
             <label>SYNOPSIS : </label>
-            <input type="text" id="champ2" name="synopsis" maxlength="1080"></input><br>
+            <input type="text" id="champ2" name="synopsis" maxlength="1080" required=""></input><br><br>
             <label>DATE : </label>
-            <input id="champ3" type="date" name="date"><br>
+            <input id="champ3" type="date" name="date" required=""><br>
             <label>IMAGE : </label>
-            <input id="champ4" type="file" name="image"><br>
+            <input id="champ4" type="file" name="image" required=""><br>
             <label>TYPE : </label>
-            <select id="champ5" name="type">
+            <select id="champ5" name="type" required=""><br>
                 <option selected="selected"></option>
                 <option>fiction</option>
                 <option>action</option>
@@ -56,9 +56,9 @@
                 <option>horreur</option>
            </select><br>
             <label>PRIX : </label>
-            <input id="champ6" type="text" name="prix"> FCFA<br>
+            <input id="champ6" type="text" name="prix" required=""> FCFA<br>
                <label></label>
-            <input class="button_form" type="submit" name="bouton" value="AJOUTER"> 
+            <input class="button_form" type="submit" name="bouton" value="AJOUTER"><br> 
         </fieldset>
     </form> 
    <footer>
@@ -86,4 +86,6 @@
         </script>-->
     </body>
 </html>
+
+
 

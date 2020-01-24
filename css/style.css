@@ -284,19 +284,9 @@ table{
     text-align: justify;
     font-family: 'Foglihten', 'Arial Narrow';
 }
-
-/*@media all and (max-width: 1024px)
-{
-    .contenu{
-        width: auto;
-        height: auto;     
-    }
-    .navigation{
-         width: auto;
-         text-align: left;
-    }   
-
-}*/
+#champ2{
+    height: 30px;
+}
 
 
 

@@ -58,7 +58,7 @@
     ?>
     <table>
         <tr>
-            <th>NOM FILM</th>
+            <th>TITRE</th>
             <th>SYNOPSIS</th>
             <th>ANNEE</th>
             <th>IMAGE</th>
