@@ -62,30 +62,13 @@
         </fieldset>
     </form> 
    <footer>
-           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
+           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
            </p>
    </footer>
-    
-     <!-- <script src="js/sweetalert2.js"></script>
-        <script type="text/javascript">
-           function validation(){
-               var champ1 = document.getElementById('champ1').value;
-               var champ6 = document.getElementById('champ6').value;
-               if(champ1 == NaN) || (champ6 !== 0){
-                   Swal.fire('Good job!','You clicked the button!',
-                      'success');
-               } 
-               else{
-                    Swal.fire({
-                      icon: 'error',
-                      title: 'Oops...',
-                      text: 'Something went wrong!',
-                      footer: '<a href>Why do I have this issue?</a>'});
-               }   
-            } 
-        </script>-->
     </body>
 </html>
+
+
 
 
 

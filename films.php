@@ -63,7 +63,7 @@
             <th>ANNEE</th>
             <th>IMAGE</th>
             <th>TYPE</th>
-            <th>PRIX EN FCFA</th>
+            <th>PRIX</th>
             <th>ACTION</th>
             
         </tr>
@@ -76,7 +76,11 @@
                 <td><p class="paragraphe_synopsis"><?php  echo $row['synopsis'] ?></p></td>
                 <td><?php  echo $row['annee'] ?></td>
                 <td>
-                   <p><img src="images/<?php  echo $row['image'] ?>" width="70" height="90"/></p>
+                   <div class="zoom">
+                     <div class="image">
+                        <img src="images/<?php  echo $row['image'] ?>" width="70" height="90" alt="le fichier n'est une image !"/>
+                     </div>
+                   </div>
                 </td>
                 <td><?php  echo $row['type'] ?></td>
                 <td><?php  echo $row['prix'] ?></td>
@@ -91,7 +95,7 @@
         
     </table>
    <footer>
-           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
+           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
            </p>
    </footer>
     </body>
