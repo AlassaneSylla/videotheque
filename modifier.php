@@ -4,7 +4,6 @@ require('conn.php');
 extract($_POST);
 $idfilm=$_POST['idmodif'];
 
-
 if(isset($_POST['update_buton'])){
     $nom=$_POST['nom'];
     $nom = addslashes($nom);
@@ -36,5 +35,4 @@ if(isset($_POST['update_buton'])){
         die('Erreur sql !' .$resultat.'</br>'.mysql_error());    
     }   
 }
-
 ?>

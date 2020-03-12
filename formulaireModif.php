@@ -1,10 +1,10 @@
  <?php
-       require('conn.php');
-       $idfilm=$_GET['id'];
-       $sql = " SELECT * from films WHERE numero=$idfilm ";
-       $resultat = mysqli_query($conn,$sql); 
-       $modif = mysqli_fetch_assoc($resultat);
-    ?>
+    require('conn.php');
+    $idfilm=$_GET['id'];
+    $sql = " SELECT * from films WHERE numero=$idfilm ";
+    $resultat = mysqli_query($conn,$sql); 
+    $modif = mysqli_fetch_assoc($resultat);
+?>
 
 <!DOCTYPE html>
 <html>    
@@ -39,14 +39,14 @@
      <form class="formulaireAjout" method="post" action="modifier.php">
         <fieldset>
             <legend>MODIFIER FILM</legend>
-            <label>TITRE : </label>
+            <label>TITRE : <em>*</em></label>
             <input type="text" name="nom" value="<?php  echo $modif['nom'] ?>"/><br> 
-            <label>SYNOPSIS</label>
+            <label>SYNOPSIS : <em>*</em></label>
             <input type="text" id="champ2" name="synopsis" value="<?php echo $modif['synopsis'] ?>" maxlength="1080"><br>
             <input type="hidden" name="idmodif" value="<?php echo $_GET['id']?>"><br><!--pour recuperer le id--> 
-            <label>DATE : </label>
+            <label>DATE : <em>*</em></label>
             <input type="date" name="date" value="<?php echo $modif['date'] ?>"><br>
-            <label>TYPE : </label>
+            <label>TYPE : <em>*</em></label>
             <select name="type"><br>
                 <option selected="selected"></option>
                 <option>fiction</option>
@@ -58,16 +58,17 @@
                 <option>fantastique</option>
                 <option>horreur</option>
            </select><br>
-            <label>IMAGE : </label>
+            <label>IMAGE : <em>*</em></label>
             <input type="file" name="image"><br>
-            <label>PRIX : </label>
+            <label>PRIX : <em>*</em></label>
             <input type="text" name="prix" value="<?php echo $modif['prix'] ?>"> FCFA<br>
             <label for="submit"></label>
-            <input class="button_form" type="submit" name="update_buton" value="MODFIER"><br>
         </fieldset>
+        <p><input class="button_form" type="submit" name="update_buton" value="MODFIER"></p>
     </form>
    <footer>
-           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
+           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/>
+           <a href="#">Me contacter !</a>
            </p>
    </footer>
     </body>

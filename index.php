@@ -11,10 +11,6 @@
     <header class="header">
         <div class="bande-bleu">
             <div class="container_recherche">
-                <!--<form class="search" action="index.php">
-                    <input class="champ" type="search" required="" placeholder="Nom du film..." name="search"  method="POST" maxlength="80">
-                    <input class="button_form" type="submit" value="Recherher">    
-               </form> -->
             </div>
         </div>
         <div class="navigation">
@@ -22,10 +18,10 @@
                     <ul class="nav"><!--
                     --><li><a href="index.php">ACCUEIL</a></li><!--
                     --><li><a href="films.php">LISTE DES FILMS</a></li><!--
-                    --><li><a href="ajout.php">AJOUTER FILM</a></li>
+                    --><li><a href="ajout.php">AJOUTER UN FILM</a></li>
                     </ul> 
                </nav>
-            </div>  
+        </div>  
     </header>
         <section>
             <div class="bienvenu">
@@ -53,7 +49,9 @@
               </p>
         </article>
    <footer>
-           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
+           <p>
+             Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/>
+             <a href="#">Me contacter !</a>
            </p>
    </footer>
     </body>

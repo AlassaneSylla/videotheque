@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript"></script>
     <title>Liste des films</title>   
@@ -64,21 +65,19 @@
             <th>IMAGE</th>
             <th>TYPE</th>
             <th>PRIX</th>
-            <th>ACTION</th>
-            
+            <th>ACTION</th>    
         </tr>
         <?php
             echo $affiche;
             while($row = mysqli_fetch_assoc($resultat)){?>   
-            <tr>
-                
+            <tr> 
                 <td><?php  echo $row['nom'] ?></td>
                 <td><p class="paragraphe_synopsis"><?php  echo $row['synopsis'] ?></p></td>
                 <td><?php  echo $row['annee'] ?></td>
                 <td>
                    <div class="zoom">
                      <div class="image">
-                        <img src="images/<?php  echo $row['image'] ?>" width="70" height="90" alt="le fichier n'est une image !"/>
+                        <img src="<?php  echo $row['image'] ?>" width="70" height="90" alt="le fichier n'est pas image !"/>
                      </div>
                    </div>
                 </td>
@@ -91,11 +90,11 @@
             </tr>
             <?php
              } 
-        ?>
-        
+        ?>  
     </table>
    <footer>
-           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
+           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/>
+           <a href="#">Me contacter !</a>
            </p>
    </footer>
     </body>

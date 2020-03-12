@@ -31,20 +31,19 @@
                 <span class="text2">ajouter un film</span>
             </div>
     </section>
-    
-    <form class="formulaireAjout" method="post" action="traitementFilm.php" enctype="mutipart/form-data">
+    <form class="formulaireAjout" method="post" action="traitementFilm.php" enctype="multipart/form-data">
         <fieldset>
             <legend>AJOUTER FILM</legend>
-            <label>TITRE : </label>
+            <label>TITRE : <em>*</em></label>
             <input id="champ1" type="text" name="nomFilm" autofocus="" required=""/><br> 
-            <label>SYNOPSIS : </label>
+            <label>SYNOPSIS : <em>*</em></label>
             <input type="text" id="champ2" name="synopsis" maxlength="1080" required=""></input><br><br>
-            <label>DATE : </label>
+            <label>DATE : <em>*</em></label>
             <input id="champ3" type="date" name="date" required=""><br>
-            <label>IMAGE : </label>
-            <input id="champ4" type="file" name="image" required=""><br>
-            <label>TYPE : </label>
-            <select id="champ5" name="type" required=""><br>
+            <label>IMAGE : <em>*</em></label>
+            <input id="champ4" type="file" name="uploadedfile" required=""><br>
+            <label>TYPE : <em>*</em></label>
+            <select id="champ5" name="type" required="">....<br>
                 <option selected="selected"></option>
                 <option>fiction</option>
                 <option>action</option>
@@ -55,18 +54,21 @@
                 <option>fantastique</option>
                 <option>horreur</option>
            </select><br>
-            <label>PRIX : </label>
+            <label>PRIX : <em>*</em></label>
             <input id="champ6" type="text" name="prix" required=""> FCFA<br>
-               <label></label>
-            <input class="button_form" type="submit" name="bouton" value="AJOUTER"><br> 
+               <label></label>    
         </fieldset>
+        <p><input class="button_form" type="submit" name="bouton" value="AJOUTER"></p>
     </form> 
    <footer>
-           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/><a href="mailto:papialou90gmail.com">Me contacter !</a>
+           <p>Copyright Alassane Sylla - Tous droits de réservés © | Vidéooo ! 2020<br/><br/>
+           <a href="#">Me contacter !</a>
            </p>
    </footer>
     </body>
 </html>
+
+
 
 
 
